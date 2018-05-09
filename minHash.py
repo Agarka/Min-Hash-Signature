@@ -1,8 +1,5 @@
 #!/usr/bin/python
 
-"""This implements the exercises of minhash part for book: 'Mining the massive
-dataset(v1.3)'. """
-
 import sys
 import itertools as itor
 import math
@@ -10,7 +7,6 @@ import re
 import numpy as np
 
 def fig_3_2():
-    """Return the data of Fig. 3.2(Column-major)"""
     
     #     a,b,c,d,e
     s1 = [1,0,0,1,0]
@@ -32,7 +28,7 @@ def fig_3_2():
 def fig_3_4():
     """Return the data of Fig. 3.4"""
     
-    # The data is the same with Fig. 3.2
+    # The data is the same with example image
     return fig_3_2()
 
 def fig_3_5():
@@ -143,9 +139,9 @@ def jaccard_sim(sig_mat):
     return sim_mat
 
 def exercise_3_3_1():
-    """Exercise 3.3.1 : Verify the theorem from Section 3.3.3, which relates the Jac-
+    """Verify the theorem which relates the Jac-
     card similarity to the probability of minhashing to equal values, for the partic-
-    ular case of Fig. 3.2."""
+    ular case."""
 
     char_mat = fig_3_2()
 
